@@ -17,3 +17,14 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+
+  run-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: Listagem
+        run: Get-ChildItem
+      - name: Local Directory PowerShell
+        run: Get-Location
+      - name: Local Directory Bash
+        run: pwd
+        shell: bash
