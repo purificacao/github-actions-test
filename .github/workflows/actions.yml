@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Simple JS Actions
         id: greet
-        uses: actions/hello-world-javascript-action@v1.1
+        uses: actions/hello-world-javascript-action@v1
         with:
           who-to-greet: "My mother"
       - name: Log Greeting Time
